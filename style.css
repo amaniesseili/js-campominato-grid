@@ -1,9 +1,6 @@
 header{
     background-color: #313243;
-    /* height: 80px; */
-    width: 1200px;
     margin: auto;
-     /* border-bottom: 5px solid #04B155;  */
 }
 
 .ama-navbar{
@@ -13,17 +10,13 @@ header{
 footer{
     background-color:   #c3c3c6;
     height: 80px;
-    width: 1200px;
     margin: auto;
-    /* border-top: 5px solid #04B155; */
 }
 main{
     height:calc(100vh - 140px); 
 }
 .container{
-    /* background-color: #030734; */
     margin: auto;
-    width: 1200px;
 }
 
 
@@ -40,3 +33,5 @@ main{
 .ama-logo{
     width: 10%;
 }
+
+
