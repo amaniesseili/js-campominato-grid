@@ -13,7 +13,7 @@ footer{
     margin: auto;
 }
 main{
-    height:calc(100vh - 140px); 
+    /* height:calc(100vh - 140px);  */
 }
 .container{
     margin: auto;
@@ -33,5 +33,12 @@ main{
 .ama-logo{
     width: 10%;
 }
+
+
+/* .cell {
+    border: 1px solid black;
+    text-align: center;
+    
+} */
 
 

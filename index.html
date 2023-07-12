@@ -8,34 +8,30 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 
-     <!-- Stile per le celle della griglia  -->
+    <!-- Stile per le celle della griglia  -->
+   
+
+    <!-- --------Florian mode ------- -->
     <style>
-      .container-grid{
-        width: 1000px;
-        height: 1000px;
+       .grid-container{
         display: flex;
+        border: 1px solid black;
         flex-wrap: wrap;
-        /* aspect-ratio: 1/1; */
-        border: 1px solid red;
+        aspect-ratio: 1/1;
       }
-      
+
+      .grid-square {
+        aspect-ratio: 1/1;
+        border: 1px solid green;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+      } 
+    
   
-      .cell {
-      border: 1px solid black;
-      display: inline-block;
-      align-items: center;
-      justify-content: center;
-      width: calc(100% / 10) ;
-      aspect-ratio: 1/1;
-      background-color: aquamarine;
-      
-      }
-
-      
-    </style>
-
-
-
+  </style>
+  <!-- ---------------------- -->
 
 </head>
 <body>
@@ -73,20 +69,29 @@
           </ul>
           
         </div>
+        <div>
+          <button type="button" class="btn btn-primary me-3" id="btn-play">Primary</button>
+        </div>
       </nav>
 
 </header>
     <main>
-       
-        <div class="container">
+      
+      <!-- <div id="game-grid"></div> -->
 
-          <h1> Campo minato </h1>
-          <!--  creo un div con id  -->
-          <div id="container-grid">
-            <!-- le celle verrano create virtualmente 
-            tramite Js -->
-          </div>
+       <!-- perche il grid e troppo grande ? -->
 
+      
+      <select name="squareCounts" id="">
+        <option value="32">36</option>
+        <option value="64">64</option>
+        <option value="81">81</option>
+      </select>
+
+      <button class="btn btn-primary" id="btn-start">Avvia </button>
+
+      <div class="grid-container"> </div> 
+    
 
 
     
