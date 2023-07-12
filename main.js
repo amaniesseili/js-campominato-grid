@@ -8,32 +8,25 @@
 
 
 
-const squareCountsSelect = document.querySelector("[name='squareCounts']");
-const BtnStart =document.querySelector("#btn-start");
-const GridContainer = document.querySelector(".grid-container");
+const gridContainer = document.querySelector(".grid-container")
+
+for(let i=0; i<100; i++){
+    const square = document.createElement("div");
+    square.classList.add("grid-square");
+
+    square.addEventListener("click", onSquareClick) //dichiaro la funzione onclick..
 
 
-BtnStart.addEventListener("click", function({}){         // al click sul pulsante
-  const squareCounts = parseInt(squareCountsSelect.value);// leggo il contenuto della select (squareCountsSlelect)
 
-  console.log("valore scelto", squareCounts);
 
-  for(let i = 0; i < squareCounts; i++){     //faccio un ciclo in base al numero scelto dal l'utente
-    
-    const square = document.createElement("div"); // creo l'elemento html
-    const squaresPerRow = Math.sqrt(squareCounts);//  quanto quadrati inseriti per riga
 
-    square.classList.add("grid-square");   // aggungo ad al square la classe +
-    square.textContent = i.toString();                   // +il contenuto 
-    square.style.flexBasis =`calc(100% / ${squaresPerRow})`;
 
-    square.addEventListener("click", function( ){     //+ l'evento 
-      square.classList.toggle("bg-success");          // la classe 
+    gridContainer.append(square);
+}
 
-    });
 
-    GridContainer.append(square);
-    
+//invoco la la funzione onClick fuori del ciclo for 
+function onSquareClick ( ) {
+    this.classList.toggle("bg-primary"); 
+}
 
-  }
-});

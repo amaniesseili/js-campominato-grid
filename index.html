@@ -13,29 +13,30 @@
 
     <!-- --------Florian mode ------- -->
     <style>
-       .grid-container{
+    .grid-container{
         display: flex;
         border: 1px solid black;
         flex-wrap: wrap;
         aspect-ratio: 1/1;
-      }
+    }
 
-      .grid-square {
+    .grid-square {
         aspect-ratio: 1/1;
+        width: 10%;
         border: 1px solid green;
         display: flex;
         align-items: center;
         justify-content: center;
 
-      } 
+    } 
     
   
-  </style>
-  <!-- ---------------------- -->
+</style>
+<!-- ---------------------- -->
 
 </head>
 <body>
-  <header>
+<header>
     <nav class="navbar ama-navbar navbar-expand-lg navbar-light  ">
         
             <img class="ama-logo ms-3" src="img/logo.svg" alt="">
@@ -75,31 +76,30 @@
       </nav>
 
 </header>
-    <main>
-      
-      <!-- <div id="game-grid"></div> -->
 
-       <!-- perche il grid e troppo grande ? -->
 
-      
-      <select name="squareCounts" id="">
-        <option value="32">36</option>
-        <option value="64">64</option>
-        <option value="81">81</option>
-      </select>
+<main>
 
-      <button class="btn btn-primary" id="btn-start">Avvia </button>
+    <div class="container">
+        <div class="row">
+            <div class="col-5">
+                <div class="grid-container"></div>
+            </div>
+        </div>
 
-      <div class="grid-container"> </div> 
+    </div>
     
 
 
+
+</main>
+
+
+
+<footer>
     
-    </main>
-    <footer class="d-flex justify-content-center align-items-center" >
-        <p></p>
-        
-    </footer>
+
+</footer>
 
     <script src="main.js"></script>
 </body>
